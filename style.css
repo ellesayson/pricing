@@ -1,0 +1,260 @@
+.title {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: arial;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.navbtn {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+    margin-right: 25px;
+    text-decoration: none;
+    text-decoration-color: black;
+}
+li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.btn{
+    background: white;
+    color: blue;
+    border-radius: 5px;
+    border-color: blue;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: blue;
+    color:white;
+}
+
+/*end of navigation bar*/
+
+p {
+    color: rgb(51, 51, 51);
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 1;
+    line-height: 30px;
+}
+
+.price-title {
+    color: black;
+    font-size: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.heading {
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.card-header {
+    text-align: center;
+    padding: 1px;
+    background: rgb(242, 241, 241);
+    color: black;
+    font-family: arial;
+}
+
+.card-body {
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.card-body .btn1 {
+    display: block;
+    color: rgba(39, 39, 255, 0.807);
+    font-size: 20px;
+    text-decoration: none;
+    background: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(39, 39, 255, 0.807);
+    margin-top: 50px;
+}
+
+.card-body .btn1:hover {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: rgba(39, 39, 255, 0.807);
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-color: rgba(39, 39, 255, 0.807);
+}
+
+.card-body .btn2 {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: rgba(39, 39, 255, 0.807);
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.card-body .btn2:hover {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    background: rgba(0, 0, 250, 0.807);
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.price-list {
+    color: black;
+    font-size: 30px;
+    margin-right: 5px;
+    font-family: Arial;
+}
+
+
+.price-list2 {
+    color: rgb(134, 132, 132);
+    font-size: 30px;
+    font-family: arial;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/*end of price list*/
+
+
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 290px;
+    display: grid;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.date {
+    margin-left: 290px;
+    font-family: arial;
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+    position: absolute;
+    margin-top: 80px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.firstrow-items {
+    display: grid;
+    font-family: arial;
+    line-height: 20px;
+}   
+
+.secondrow-items {
+    display: grid;
+    font-family: arial;
+    line-height: 20px;
+}
+
+.thirdrow-items {
+    display: grid;
+    font-family: arial;
+    line-height: 20px;
+}
+
+
+
+/*tablet section*/
+@media only screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        flex-grow: initial;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .navdiv {
+        flex-direction: column;
+    }
+
+    
+
+}
+/*mobile section*/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .navdiv {
+        flex-direction: column;
+    }
+
+}
